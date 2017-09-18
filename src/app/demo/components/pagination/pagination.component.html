@@ -1,0 +1,308 @@
+<div id="wrapper">
+    
+        <div id="main">
+            <h2>Site Utilities</h2>
+    
+            <div class="i-section">
+    
+                <h3>Pagination
+                    <a shape="rect" href="#"><img src="/assets/styles/c4theme/img/info.png" alt="Component Information"></a>
+                </h3>
+                <ul class="component-info" style="display: none; position: absolute;">
+                    <li>Class name: <em>(c4-pagination)</em></li>
+                    <li>Version: 1.0</li>
+    
+                    <li>
+                        <img src="/assets/styles/c4theme/img/k-theme0/jquery-trans.png" alt="angular"> angular Integration
+                    </li>
+    
+                </ul>
+    
+                <p class="buy" id="toBasket">
+                    <a id="panier" onclick="javascript:return angular.waitForPage(event);" title="Add this component to download list" role="button" href="/component.panier/pagination?t:ac=pagination">Add to list</a>
+                </p>
+    
+                <div class="c4-notes">
+                    <p>Basic pagination that may be used for data tables, articles, news, etc.</p>
+                </div>
+    
+                <div class="c4-tabbed-data" id="demo-tab">
+                    <ul class="tabs" role="tablist">
+    
+                        <li role="presentation">
+                            <a shape="rect" href="#demo" role="tab" aria-selected="true" tabindex="0" id="tab0" aria-controls="demo" class="active">Demo</a>
+                        </li>
+    
+                        <li role="presentation">
+                            <a shape="rect" href="#snippet" role="tab" aria-selected="false" tabindex="-1" id="tab1" aria-controls="snippet" class="">Snippets</a>
+                        </li>
+    
+                        <li role="presentation">
+                            <a shape="rect" href="#angular" role="tab" aria-selected="false" tabindex="-1" id="tab2" aria-controls="angular" class="">Angular Integration</a>
+                        </li>
+    
+                    </ul>
+    
+                    <div id="demo" class="content" aria-hidden="false" aria-expanded="true" role="tabpanel" aria-labelledby="tab0" style="display: block; padding-top: 1rem;">
+    
+                        <c4pagination (pageChange)="switchPage($event)" [startPage]="currentPage" [totalNbItems]="length" [nbItemsPerPage]="perPageFilter"></c4pagination>
+                      
+                    </div>
+    
+                    <div id="snippet" class="content" aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="tab1" style="display: none; padding-top: 1rem;">
+    
+                        <div class="k-panel showSource " id="html5-code" tabindex="0">
+                            <h4 class="control "><a shape="rect" title="Click to fold/unfold" href="panel100" id="control100" aria-controls="panel100">HTML5 Plain Code</a></h4>
+                            <div class="content" aria-hidden="true" aria-expanded="false" id="panel100" aria-labelledby="control100" style="display: none;">
+                                <div class="i-html5-code">
+                                    <div class="clip-container" id="html5-code-clip-container">
+                                        <div class="clip-button" id="html5-code-clip-button">
+                                            COPY
+                                        </div>
+                                    </div>
+                                    <div class="code">
+                                        <ol class="display-code">
+    
+                                            <li>
+                                                <pre>&lt;div class="k-pagination"&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>	&lt;form id="pagination" method="post" action=""&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;p class="lines-to-display"&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>			&lt;label&gt;Display  </pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>				&lt;select name="display-value"&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>					&lt;option value="10"&gt;10&lt;/option&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>					&lt;option value="15"&gt;15&lt;/option&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>					&lt;option value="20"&gt;20&lt;/option&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>				&lt;/select&gt; lines per page&lt;/label&gt;&lt;/p&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>	&lt;/form&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>	&lt;p class="total-pages"&gt;Results 1 to 10 of &lt;strong&gt;20&lt;/strong&gt;&lt;/p&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>	&lt;p class="page-numbers"&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;img src="../img/k-theme0/pic_first_off.gif" alt="[ First page ]" /&gt; </pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;img src="../img/k-theme0/pic_prev_off.gif" alt="[ Previous page ]" /&gt; </pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;span&gt;&lt;strong title="Current page"&gt;1&lt;/strong&gt; |  &lt;a href="#"&gt;2&lt;/a&gt;&lt;/span&gt; </pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;a href="#" title="Go to next page"&gt;&lt;img src="../img/k-theme0/pic_next.gif" alt="[ Next page ]" /&gt;&lt;/a&gt; </pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>		&lt;a href="#" title="Go to last page"&gt;&lt;img src="../img/k-theme0/pic_last.gif" alt="[ Last page ]" /&gt;&lt;/a&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>	&lt;/p&gt;</pre>
+                                            </li>
+    
+                                            <li>
+                                                <pre>&lt;/div&gt;</pre>
+                                            </li>
+    
+                                        </ol>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="k-panel showSource " id="css3-code">
+                            <h4 class="control "><a shape="rect" title="Click to fold/unfold" href="panel84" id="control84" aria-controls="panel84">CSS Code</a></h4>
+                            <div class="content" aria-hidden="true" aria-expanded="false" id="panel84" aria-labelledby="control84" style="display: none;">
+                                <div class="i-css3-code">
+                                    <div class="clip-container" id="css3-code-clip-container">
+                                        <div class="clip-button" id="css3-code-clip-button">
+                                            COPY
+                                        </div>
+                                    </div>
+                                    <div class="code">
+                                        <ol class="display-code">
+    
+                                          
+    
+                                        </ol>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="exception">
+                            <h3 class="control">IE Backward Compatibility</h3>
+                            <div class="content">
+                                <p>In order to correct display bugs for Internet Explorer versions prior to 9, your html pages need to call the following file by Conditional Comments:</p>
+                                <ul class="k-links-list">
+                                    <li><a href="/assets/styles/c4theme/js/ieGeneralFix.js">ieGeneralFix.js</a></li>
+                                    <li><a href="/assets/styles/c4theme/js/html5shiv.js">html5shiv.js</a></li>
+                                    <li><a href="/assets/styles/c4theme/css/iehacks0.css">iehacks0.css</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="angular" class="content" aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="tab2" style="display: none; padding-top: 1rem;">
+    
+                        <h4 tabindex="0">Angular Integration</h4>
+    
+                        <div class="k-notes">
+                            <p> The Pagination Component is available thanks to the Kawwa2Grid compononent, which has the same behavior (parameters ... ) as the Grid Component. The Kawwa2Grid component has 2 extra parameters in order to configure the pager. </p>
+                            <table summary="This table shows the parameters needed for the SiteSearch Component">
+                                <caption>Kawwa2Grid parameters</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col"> Name </th>
+                                        <th scope="col"> Required </th>
+                                        <th scope="col"> Java Type </th>
+                                        <th scope="col"> Default Prefix </th>
+                                        <th scope="col"> Default Value </th>
+                                        <th scope="col"> Description </th>
+                                    </tr>
+                                    <tr>
+                                        <td>maxAge</td>
+                                        <td> false </td>
+                                        <td> int </td>
+                                        <td> literal </td>
+                                        <td> 24 * 60 * 60 * 7 </td>
+                                        <td> Max age in seconds for the number of row per page cookie. </td>
+                                    </tr>
+                                    <tr>
+                                        <td> navigatorOptions </td>
+                                        <td> false </td>
+                                        <td> String </td>
+                                        <td> literal </td>
+                                        <td> 5,10,15,20 </td>
+                                        <td> A String representing the different values of the select input, used for selecting the number of rows. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p> The Kawwa2Grid can also display automatically a filter form. You just need to set the criterium parameter. angular will use this object to generate a form thanks to the BeanEditor component. When the form will be submitted,angular will propagate 2 events : </p>
+                            <ul>
+                                <li>KawwaEventsConstants.UPDATE_GRID_DATA_SOURCE</li>
+                                <li>KawwaEventsConstants.RESET_GRID_DATA_SOURCE_FILTER</li>
+                            </ul>
+                            <p> You can create method catching these events, and filter your data source. You can also configure 3 labels thanks to 3 others parameters : </p>
+                            <ul>
+                                <li>filterHeader : Header of the block containing the Filter form</li>
+                                <li>submitLabel : Value for the submit input of the Filter form</li>
+                                <li>resetLabel : Value for the reset input of the Filter form</li>
+                            </ul>
+                        </div>
+    
+                        <div class="c4-panel showSource " id="angularIntegration_html-code">
+                            <h4 class="control "><a shape="rect" title="Click to fold/unfold" href="panel38" id="control38" aria-controls="panel38" class="" aria-selected="true">The Template</a></h4>
+                            <div class="content" aria-hidden="false" aria-expanded="true" id="panel38" aria-labelledby="control38" style="display: none;">
+                                <div class="i-angularIntegration_html-code">
+                                    <div class="clip-container" id="angularIntegration_html-code-clip-container">
+                                        <div class="clip-button" id="angularIntegration_html-code-clip-button">
+                                            COPY
+                                        </div>
+                                    </div>
+                                    <div class="code">
+                                        <ol class="display-code">
+    
+    
+                                        </ol>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="c4-panel showSource " id="angularIntegration_java-code">
+                            <h4 class="control "><a shape="rect" title="Click to fold/unfold" href="panel65" id="control65" aria-controls="panel65" class="active" aria-selected="true">Java Implementation</a></h4>
+                            <div class="content" aria-hidden="false" aria-expanded="true" id="panel65" aria-labelledby="control65" style="">
+                                <div class="i-angularIntegration_java-code">
+                                    <div class="clip-container" id="angularIntegration_java-code-clip-container">
+                                        <div class="clip-button" id="angularIntegration_java-code-clip-button">
+                                            COPY
+                                        </div>
+                                    </div>
+                                    <div class="code">
+                                        <ol class="display-code">
+    
+    
+                                        </ol>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="k-orientation-aid">
+                <p class="go-top"><a shape="rect" title="Go to the top of the page" href="#container">Top</a></p>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div class="t-zone angular-zone" id="zoneBasket">
+    
+                <form enctype="application/x-www-form-urlencoded" onsubmit="javascript:return angular.waitForPage(event);" action="/component.listebasket.form" method="post" id="form_0">
+                    <div class="" style="display: none;"><input value="pagination" name="t:ac" type="hidden"><input value="laYmy77G+HUI5/i5rU77Zx5AxUc=:H4sIAAAAAAAAAFvzloEVAN3OqfcEAAAA" name="t:formdata" type="hidden"></div>
+    
+                    <div class="k-basket k-panel ui-panel ui-widget ui-helper-reset ui-panel-icons" id="downloadList">
+                        <div role="region" aria-labelledby="ui-panel-0" aria-expanded="true">
+                            <h3 title="Click to fold/unfold block" class="control ui-state-active ui-panel-header ui-helper-reset ui-state-default ui-corner-all" id="ui-panel-0"><span class="ui-icon ui-icon-triangle-1-s"></span>Download List (0)</h3>
+                            <div class="content ui-panel-content ui-helper-reset ui-widget-content ui-corner-bottom">
+    
+                                <p>Your download list is empty.</p>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </div>
