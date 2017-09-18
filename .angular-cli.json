@@ -19,7 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/styles/main.css",
+        "assets/styles/c4theme/css/c4-theme0.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
